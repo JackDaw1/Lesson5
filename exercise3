@@ -1,0 +1,12 @@
+import UIKit
+
+var users = [200: "frkjenfv2kj1233",
+                        403: "rgkmvj3krlgefm2k34",
+                        404: "abc123",
+                        500: "rugjrfjkgn13"]
+
+for password in users.values {
+    if password.count > 10 {
+        print(password)
+    }
+}
