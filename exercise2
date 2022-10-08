@@ -1,0 +1,10 @@
+import UIKit
+
+//Исходный массив
+var arr1 = [5, 4, 7, 1, 2, 9]
+var arr2 = [5, 3, 7, 8, 2, 9, 0]
+//собираем результирующее множество
+var intersection: Set = (Set<Int>(arr1).intersection(arr2))
+//либо просто выводим пересечение без использования дополнительной переменной
+print([Int](Set<Int>(arr1).intersection(arr2)))
+print(intersection)
