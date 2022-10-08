@@ -1,0 +1,37 @@
+import UIKit
+
+
+//Исходный массив
+var arr = [5, 4, 7, 1, 2, 9]
+
+var maxElem = arr[0]
+var minElem = arr[0]
+var interator = 0
+var minIndex = 0
+var maxIndex = 0
+
+for elem in arr {
+    if elem > maxElem {
+        maxElem = elem
+        maxIndex = interator
+    }
+    if elem < minElem {
+        minElem = elem
+        minIndex = interator
+    }
+    interator+=1
+}
+
+print("Array:")
+print(arr)
+print(" ")
+print("minElem is", minElem)
+print("his index is", minIndex)
+print(" ")
+print("maxElem is", maxElem)
+print("his index is", maxIndex)
+
+arr.swapAt(minIndex, maxIndex)
+
+print("\nFinal array")
+print(arr)
