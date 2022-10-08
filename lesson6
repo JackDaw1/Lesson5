@@ -1,0 +1,24 @@
+import UIKit
+
+//ex1
+func addition(a: Int, b: Int) -> Int {
+        return a+b
+}
+
+print(addition(a: 3, b: 2))
+
+
+
+
+//ex4
+func checkingYear(year: Int) -> Bool {
+    if year % 4 == 0 {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+
+print(checkingYear(year: 1972))
