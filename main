@@ -4,11 +4,11 @@ import UIKit
 //Исходный массив
 var arr = [5, 4, 7, 1, 2, 9]
 
-var maxElem = arr[0]
-var minElem = arr[0]
-var interator = 0
-var minIndex = 0
-var maxIndex = 0
+var maxElem = arr[0] //максимальный элемент
+var minElem = arr[0] //минимальный элемент
+var interator = 0 //вспомогательный счетчик для цикла
+var minIndex = 0 //индекс минимального элемента
+var maxIndex = 0 //индекс максимального элемента
 
 for elem in arr {
     if elem > maxElem {
@@ -31,7 +31,6 @@ print(" ")
 print("maxElem is", maxElem)
 print("his index is", maxIndex)
 
-arr.swapAt(minIndex, maxIndex)
-
+arr.swapAt(minIndex, maxIndex) //меняем местами минимальный и максимальный элементы
 print("\nFinal array")
 print(arr)
